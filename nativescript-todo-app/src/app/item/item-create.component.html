@@ -1,0 +1,15 @@
+<ActionBar title="Create Task">
+    <ActionItem>
+        <Label text="Logout" (tap)="logout()" paddingright="20" color="red"></Label>
+    </ActionItem>
+</ActionBar>
+
+<StackLayout orientation="vertical">
+    <TextField [(ngModel)]="todo.title" hint="Title"></TextField>
+    <TextField [(ngModel)]="todo.description" hint="description"></TextField>
+
+</StackLayout>
+<StackLayout orientation="horizontal" horizontalAlignment="center">
+    <Button text="Back" (tap)="cancel()"></Button>
+    <Button text="Create task" (tap)="submit()" style="background-color: green;"></Button>
+</StackLayout>

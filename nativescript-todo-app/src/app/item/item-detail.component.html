@@ -1,0 +1,21 @@
+<ActionBar title="Details">
+    <ActionItem>
+        <Label text="Logout" (tap)="logout()" paddingright="20" color="red"></Label>
+    </ActionItem>
+</ActionBar>
+
+<FlexboxLayout flexDirection="column">
+    <StackLayout class="m-15">
+        <!-- <Label class="h2" [text]="todo?.title + '. '"></Label>
+        <Label class="h4 m-15" [text]="todo?.description"></Label> -->
+        <TextField [(ngModel)]="todo.title" hint="Title"></TextField>
+        <TextField [(ngModel)]="todo.description" hint="description"></TextField>
+        <!-- <label text="{{id}}"></label> -->
+    </StackLayout>
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Button text="Back" (tap)="cancel()"></Button>
+        <Button text="Update" (tap)="update()" style="background-color: green;"></Button>
+        <Button text="Delete" (tap)="delete()" style="background-color: red;"></Button>
+    </StackLayout>
+    <!-- <Label class="h4 m-15" [text]="item.role"></Label> -->
+</FlexboxLayout>

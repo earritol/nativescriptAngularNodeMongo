@@ -1,0 +1,17 @@
+backend/node_modules/
+
+nativescript-todo-app/node_modules/
+nativescript-todo-app/npm-debug.log
+nativescript-todo-app/.DS_Store
+nativescript-todo-app/*.js.map
+nativescript-todo-app/app/**/*.js
+nativescript-todo-app/e2e/**/*.js
+nativescript-todo-app/e2e/reports/
+nativescript-todo-app/hooks/
+nativescript-todo-app/lib/
+nativescript-todo-app/node_modules/
+nativescript-todo-app/platforms/
+nativescript-todo-app/tmp/
+nativescript-todo-app/typings/
+nativescript-todo-app/report/
+nativescript-todo-app/test-results.xml
